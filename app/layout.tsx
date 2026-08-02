@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "./context/LanguageContext";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Sri Kousika Mahasiva Vasishtar | Nadi Astrology Centre",
   description:
     "Authentic Nadi Astrology Centre in Coimbatore",
