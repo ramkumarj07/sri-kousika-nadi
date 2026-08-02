@@ -1,18 +1,15 @@
 export default function HeroBackground() {
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#090510] via-[#13091d] to-[#090510]" />
+      {/* Golden Glow Left */}
+      <div className="absolute top-20 left-0 w-80 h-80 rounded-full bg-yellow-400/15 blur-[120px]" />
 
-      {/* Gold Glow Left */}
-      <div className="absolute top-16 left-10 w-72 h-72 rounded-full bg-yellow-500/10 blur-[120px]" />
+      {/* Golden Glow Right */}
+      <div className="absolute bottom-10 right-0 w-[420px] h-[420px] rounded-full bg-yellow-500/15 blur-[150px]" />
 
-      {/* Gold Glow Right */}
-      <div className="absolute bottom-16 right-10 w-96 h-96 rounded-full bg-yellow-400/10 blur-[150px]" />
-
-      {/* Star Pattern */}
-      <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle,#FFD54A_1px,transparent_1px)] [background-size:35px_35px]" />
+      {/* Soft Stars */}
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle,#FFD54A_1px,transparent_1px)] [background-size:40px_40px]" />
 
     </div>
   );
