@@ -51,9 +51,7 @@ export default function Testimonials() {
   return (
     <section className="py-24 bg-[#0B0613]">
       <div className="max-w-7xl mx-auto px-6">
-
         <div className="text-center mb-16">
-
           <p className="text-yellow-400 uppercase tracking-[4px] font-semibold">
             {language === "ta"
               ? "வாடிக்கையாளர் கருத்துகள்"
@@ -65,11 +63,9 @@ export default function Testimonials() {
               ? "எங்கள் வாடிக்கையாளர்கள் என்ன சொல்கிறார்கள்?"
               : "What Our Clients Say"}
           </h2>
-
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-
           {testimonials.map((item, index) => (
             <div
               key={index}
@@ -80,7 +76,7 @@ export default function Testimonials() {
               </div>
 
               <p className="text-gray-300 italic leading-8">
-                "{item.review}"
+                &ldquo;{item.review}&rdquo;
               </p>
 
               <div className="mt-8">
@@ -88,16 +84,11 @@ export default function Testimonials() {
                   {item.name}
                 </h3>
 
-                <p className="text-gray-400">
-                  {item.place}
-                </p>
+                <p className="text-gray-400">{item.place}</p>
               </div>
-
             </div>
           ))}
-
         </div>
-
       </div>
     </section>
   );
